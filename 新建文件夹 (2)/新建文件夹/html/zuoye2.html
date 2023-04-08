@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/zuoye2.css">
+    <script src="../js/all.js"></script>
+</head>
+<body>
+    <div class="lunbo">
+       <div class="lunbo-img"><img src="../images/kenan.jpg"></div>
+       <div class="lunbo-img"><img src="../images/tianqizhizi.jpg" alt=""></div>
+       <div class="lunbo-img"><img src="../images/youxirensheng.jpg" alt=""></div>
+       <div class="lunbo-img"><img src="../images/zhonggoujingqi.jpg" alt=""></div>
+    </div>
+    <div class="navgation">	
+        <ol class="shell">
+            <li class="button">
+                <span>菜单</span>
+                <ol>
+                    <li><a href="index.html">选择项</a></li>
+                    <li><a href="denglu1.html">选择项</a></li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div class="pushbutton">
+        <buttom>按钮</buttom>
+        <buttom>按钮</buttom>
+        <buttom>按钮</buttom>
+    </div>
+    <div class="painted-corridor">
+        <div class="painted-img"><img src="../images/kenan.jpg" alt=""></div>
+        <div class="painted-img"><img src="../images/tianqizhizi.jpg" alt=""></div>
+        <div class="painted-img"><img src="../images/youxirensheng.jpg" alt=""></div>
+        <div class="painted-img"><img src="../images/zhonggoujingqi.jpg" alt=""></div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+    <script>
+        $(function(){
+        var index=0;
+        setInterval(function(){
+					if(index==$(".lunbo-img").length-1){
+						index=0;
+						$(".lunbo-img").css("opacity","0");
+						$(".lunbo-img").eq(index).css("opacity","1");
+					}
+					else{
+						index++;
+						$(".lunbo-img").css("opacity","0");
+						$(".lunbo-img").eq(index).css("opacity","1");
+					}
+				},4000)
+        })
+    </script>
+</body>
+</html>

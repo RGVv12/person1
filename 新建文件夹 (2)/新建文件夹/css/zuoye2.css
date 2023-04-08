@@ -1,0 +1,122 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.lunbo{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.4rem;
+    width: 3.2rem;
+    height: 4.8rem;
+}
+.lunbo-box{
+    position: relative;
+    width: 3.2rem;
+    height: 4.8rem;
+}
+.lunbo-img{
+    position: absolute;
+    width: 3.2rem;
+    height: 4.8rem;
+    float: left;
+    opacity: 0;
+    transition: all 1.5s;
+}
+.lunbo-img:nth-child(1){
+    opacity: 1;
+}
+.lunbo-img img{
+    width: 3.2rem;
+    height: 4.8rem;
+}
+.navgation{
+	position: relative;
+    top: 1rem;
+    left: 4rem;
+	width: 1rem;
+	height: 0.6rem;
+	z-index: 3;
+	padding: 0;
+	margin: 0;
+}
+
+.shell{
+	text-align: center;
+	position: relative;
+    font-size: 0.2rem;
+}
+.shell li{
+	position: relative;
+	left: -40px;
+	list-style: none;
+	text-align: center;
+	width: 1rem;
+	line-height: 0.6rem;
+	background-color: #66cc;
+}
+.button:hover{
+	background-color:#e07a5f;
+}
+.button ol li{
+	height: 0;
+	transition: 0.2s;
+	opacity: 0;
+	transform: translateY(-50px);
+	background-color: #66cc;
+}
+.button:hover li{
+	height: 0.6rem;
+	opacity: 1;
+	transform: translateY(0);
+}
+.button a{
+	color: #000;
+	display: block;
+}
+.button a:hover{
+	background-color:#22777C;
+}
+.pushbutton{
+    position: relative;
+    top: 1rem;
+    left: 4rem;
+}
+.pushbutton buttom{
+    margin-top: 0.6rem;
+    display: block;
+    float: left;
+    text-align: center;
+    line-height: 0.5rem;
+    font-size: 0.2rem;
+    width: 1rem;
+    height: 0.5rem;
+    background-color: rgb(96, 152, 201);
+    color: #b82525;
+}
+.pushbutton buttom:hover{
+    background-color: #22777C;
+}
+.painted-corridor{
+    position: absolute;
+    top: 5.5rem;
+    left: 1rem;
+}
+.painted-corridor .painted-img{
+    float: left;
+}
+.painted-corridor img{
+    width: 1.5rem;
+    height: 2.3rem;
+    transition: 0.3s;
+   
+}
+.painted-corridor img:hover{
+    width: 2rem;
+    height: 3rem; 
+    transform: translateY(-0.5rem);
+}

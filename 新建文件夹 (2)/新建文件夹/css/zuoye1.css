@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.jieshao{
+    width: 100%;
+    height: 300px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.nav{
+    width: 360px;
+    height: 40px;
+    background-color: aquamarine;
+}
+.nav a{
+    display: block;
+    float: left;
+    width: 80px;
+    margin-left:30px ;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+}
+.nav a:hover{
+    color: red;
+    background-color: aqua;
+    height: 30px;
+}
+.user{ 
+    position: relative;
+    top: 10px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+}
+.user img{
+    position: relative;
+    left: -18px;
+    width: 100px;
+    height: 80px;
+}
+.jieshao h4{
+    position: relative;
+    top: -30px;
+    left: 70px;
+}
+.movie{
+    width: 400px;
+}
+.movie table,td,tr{
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+.movie img{
+    width: 240px;
+    height: 360px;
+}
+.movie td:nth-child(1){
+    width: 240px;
+}
+.movie td:nth-child(2){
+    width: 160px;
+    text-align: center;
+}
+.movie a:hover{
+    color: aquamarine;
+    text-decoration: underline;
+}
